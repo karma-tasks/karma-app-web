@@ -1,0 +1,29 @@
+{
+  "name": "karma-app-web",
+  "version": "0.0.1",
+  "description": "React/Firebase Web App for Karma",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karma-tasks/karma-app-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karma-tasks/karma-app-web/issues"
+  },
+  "homepage": "https://github.com/karma-tasks/karma-app-web#readme",
+  "dependencies": {
+    "dotenv-webpack": "^1.7.0",
+    "firebase": "^5.8.5",
+    "next": "^8.0.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-firebase-hooks": "^1.1.0"
+  }
+}
