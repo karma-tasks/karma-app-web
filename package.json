@@ -2,11 +2,11 @@
   "name": "karma-app-web",
   "version": "0.0.1",
   "description": "React/Firebase Web App for Karma",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "node server.js",
     "lint": "eslint ."
   },
   "repository": {
@@ -25,6 +25,7 @@
     "@material-ui/styles": "^3.0.0-alpha.10",
     "dotenv-webpack": "^1.7.0",
     "eslint-plugin-react": "^7.12.4",
+    "express": "^4.16.4",
     "firebase": "^5.8.5",
     "jss": "^9.8.7",
     "next": "^8.0.3",

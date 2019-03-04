@@ -23,6 +23,13 @@ function About(props) {
         <Typography variant="subtitle1" gutterBottom>Firebase</Typography>
         <Typography gutterBottom component="div">
           <ul>
+            <li><b>NODE_ENV</b> {process.env.NODE_ENV}</li>
+            <li><b>GAE_APPLICATION</b> {process.env.GAE_APPLICATION}</li>
+            <li><b>GAE_DEPLOYMENT_ID</b> {process.env.GAE_DEPLOYMENT_ID}</li>
+            <li><b>GAE_ENV</b> {process.env.GAE_ENV}</li>
+            <li><b>PORT</b> {process.env.PORT}</li>
+
+
             <li><b>GCLOUD_PROJECT_ID</b> {process.env.GCLOUD_PROJECT_ID}</li>
             <li><b>FIREBASE_API_KEY</b> {process.env.FIREBASE_API_KEY}</li>
             <li><b>FIREBASE_AUTH_DOMAIN</b> {process.env.FIREBASE_AUTH_DOMAIN}</li>

@@ -1,6 +1,8 @@
 import React from 'react';
 import App, { Container } from 'next/app';
 import Head from 'next/head';
+// Note: New ThemeProvider doesn't support sheetsManager prop soo....
+//import { ThemeProvider as MuiThemeProvider } from '@material-ui/styles';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import JssProvider from 'react-jss/lib/JssProvider';
@@ -26,7 +28,7 @@ class MyApp extends App {
     return (
       <Container>
         <Head>
-          <title>My page</title>
+          <title>Karma Tasks</title>
         </Head>
         {/* Wrap every page in Jss and Theme providers */}
         <JssProvider

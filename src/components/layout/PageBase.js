@@ -1,3 +1,4 @@
+// Page Base Component
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -32,12 +33,12 @@ function AuthRequired(props) {
           let {isUserSignedIn} = ctx;
 
           if (isUserSignedIn) {
-            return props.children;
+            return <div styles={{padding:32}}>{props.children}</div>;
           }
           return (
             <div>
-              <b>Gandalf Yo.</b>
-              <Button variant="contained" color="primary" onClick={doLogin}>Login</Button>
+              <b>You must Sign In to access this page. </b>
+              <Button variant="contained" color="primary" onClick={doLogin}>Sign In</Button>
             </div>
           );
         }
@@ -63,7 +64,7 @@ export default function PageBase(props) {
       <wrapper.component>
         <AppBar />
         { props.children }
-
+        <br /><br />
         <Link href="/"><a>index (public)</a></Link> | <Link href="/public"><a>another (public)</a></Link> | <Link href="/tasks"><a>tasks (secure)</a></Link> | <Link href="/environment"><a>environment (secure)</a></Link>
       </wrapper.component>
     </FirebaseAuthProvider>
