@@ -26,7 +26,7 @@ class MyApp extends App {
     return (
       <Container>
         <Head>
-          <title>My page</title>
+          <title>KARMA TASKS</title>
         </Head>
         {/* Wrap every page in Styles and Theme providers */}
         <StylesProvider

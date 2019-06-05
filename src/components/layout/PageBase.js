@@ -1,7 +1,7 @@
 // Page Base Component
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import classnames from 'classnames';
 import AppBar from './AppBar';
 import Link from 'next/link';
 import FirebaseAuthProvider, {FirebaseAuthContext} from '../../services/Firebase/FirebaseAuthProvider';
@@ -53,7 +53,6 @@ AuthRequired.propTypes = {
 
 
 export default function PageBase(props) {
-
   let wrapper = {component: 'div'};
   if (props.loginRequired) {
     wrapper.component = AuthRequired;
@@ -63,7 +62,9 @@ export default function PageBase(props) {
     <FirebaseAuthProvider>
       <wrapper.component>
         <AppBar />
-        { props.children }
+        <div style={{padding:32}}>
+          { props.children }
+        </div>
         <br /><br />
         <Link href="/"><a>index (public)</a></Link> | <Link href="/public"><a>another (public)</a></Link> | <Link href="/tasks"><a>tasks (secure)</a></Link> | <Link href="/environment"><a>environment (secure)</a></Link>
       </wrapper.component>
@@ -73,5 +74,5 @@ export default function PageBase(props) {
 
 PageBase.propTypes = {
   children: PropTypes.node,
-  loginRequired: PropTypes.bool
+  loginRequired: PropTypes.bool,
 };

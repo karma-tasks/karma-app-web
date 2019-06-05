@@ -1,3 +1,6 @@
+import '../src/bootstrap';
+// --- Post bootstrap -----
+
 import React from 'react';
 import PageBase from '../src/components/layout/PageBase';
 

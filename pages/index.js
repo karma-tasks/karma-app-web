@@ -1,3 +1,6 @@
+import '../src/bootstrap';
+// --- Post bootstrap -----
+
 import React from 'react';
 import PageBase from '../src/components/layout/PageBase';
 import Typography from '@material-ui/core/Typography';
@@ -6,7 +9,7 @@ function HomeComponent() {
   // Subscribe to data stream
 
   return (
-    <PageBase loginRequired={false}>
+    <PageBase padded={true} loginRequired={false}>
       <Typography variant="h4" gutterBottom>Welcome</Typography>
       <p>This is a simple test project that includes proof of concepts for:</p>
       <ul>

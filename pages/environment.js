@@ -1,4 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+import '../src/bootstrap';
+// --- Post bootstrap -----
 
 import React from 'react';
 import PropTypes from 'prop-types';
