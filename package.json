@@ -30,7 +30,7 @@
     "express": "^4.16.4",
     "firebase": "^5.8.5",
     "jss": "^9.8.7",
-    "next": "^8.0.3",
+    "next": "^9.3.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-firebase-hooks": "^1.1.0",
